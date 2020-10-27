@@ -14,9 +14,9 @@ flex-direction: column;
 justify-content: center;
 align-items: center;
 line-height: 1px;
-background-color: #99AC5D;
-width: 60%;
-color: #216745;
+background-color: #1E96FC;
+width: 100%;
+color: #FCF300;
 margin: 0;
 border-radius: 30px;
 h1 {
@@ -38,14 +38,14 @@ const NavigationBar = () => {
                 Home
                 </Button>
             </Link>
-            <Link to={'/About'}>
+            <Link to={'/Rules'}>
                 <Button>
-                About
+                Rules
                 </Button>
             </Link>
-            <Link to={'/Menu'}>
+            <Link to={'/Game'}>
                 <Button>
-                Menu of Services
+                Game of Life
                 </Button>
             </Link>
       </Navbar>

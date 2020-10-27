@@ -24,10 +24,10 @@ export default class Game extends Component {
     if(!this.state.gameRunning) {
       var actualSize = this.state.size;
 
-      if(event.target.value < 20)
+      if(event.target.value < 50)
         actualSize[1] = event.target.value;
       else
-        actualSize[1] = 20;
+        actualSize[1] = 50;
 
       this.setState({
         size: actualSize,
@@ -71,6 +71,9 @@ export default class Game extends Component {
     }
   }
 
+  
+
+
   stopGame(){
     this.setState({
       gameRunning: false
@@ -80,6 +83,14 @@ export default class Game extends Component {
       }
     })
   }
+
+
+//   clearGrid() {
+//     this.Game.stopGame();
+//     setGrid(Array.from({ length: size }).map(() => Array.from({ length: size }).fill({ isAlive: false })));
+//     setGen(0);
+//     speed = 100;
+// }
 
   runGame() {
     this.setState({
@@ -139,6 +150,7 @@ export default class Game extends Component {
           <div className="headerButtons">
             <button className="submit" onClick={this.startGame}>Start</button>
             <button className="submit" onClick={this.stopGame}>Stop</button>
+            <button className="submit" onClick={this.clearGrid}>Clear</button>
           </div>
           Generation: {this.state.universe.getGeneration()}
         </div>
