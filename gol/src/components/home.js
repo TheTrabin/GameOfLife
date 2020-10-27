@@ -36,7 +36,7 @@ const Home = () => {
 				<p>
 					{' '}
 					Von Neumann was thinking about an engineering solution which would use
-					electromagnetic components floating randomly in liquid or gas.[2] This
+					electromagnetic components floating randomly in liquid or gas. This
 					turned out not to be realistic with the technology available at the
 					time. Stanislaw Ulam invented cellular automata, which were intended
 					to simulate von Neumann's theoretical electromagnetic constructions.
